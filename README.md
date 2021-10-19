@@ -20,21 +20,23 @@
 1. Выбор модели телефона, Обновление данных на странице
 2. 
 * `for="pet-select"` требуется заменить на `for="phone-select"`
+
   ```jsx
   <label for="pet-select">Choose:</label>
   ```
-* При сбразывании параметров из тега select изчезало дефолтное поле
-  ```jsx
+* При сбрасывании параметров из тега select исчезало дефолтное поле
+
+ ```jsx
   <option value="0">--Please choose an option--</option>
   ```
-* По умолчанию кнопка selected должна быть отклбюченна  
+* По умолчанию кнопка selected должна быть отключена
   ```jsx
   <button id="btn-select" type="button" disabled="true">Select</button>
   ```
 * При нажатии кнопки select не производилось обновление данных.
 
 3. Добавил поведение. Если флаг не стоит нельзя выбирать кнопку `select`
-4. Эти три параметра будут null, так кака html ещё не загружен
+4. Эти три параметра будут `null`, так кака html ещё не загружен
 ```jsx
 let btnRefresh = this.getBtnRefresh();
 let btnSelect = this.getBtnSelect();
