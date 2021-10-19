@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Task #1</title>
+
+    <link rel="stylesheet" href="">
+    <script src="app/client.js"></script>
+
+</head>
+
+<body>
+    <h1>Выбор моделей</h1>
+
+    <div id='content'>
+        <p>
+            <button id="btn-refresh" type="button">Refresh</button>
+        </p>
+        <p>
+            <label for="phone-select">Choose:</label>
+            <select name="items" id="phone-select">
+                <option value="0">--Please choose an option--</option>
+                <option value="1">Samsung</option>
+                <option value="2">Apple</option>
+                <option value="3">Asus</option>
+                <option value="4">Huawei</option>
+                <option value="5">Lenovo</option>
+                <option value="6">LG</option>
+            </select>
+        </p>
+        <p>
+            <label for="btn-confirm">Confirm</label>
+            <input type="checkbox" id="btn-confirm" name="confirm">
+        </p>
+        <p>
+            <button id="btn-select" type="button" disabled="true">Select</button>
+        </p>
+
+    </div>
+</body>
+
+<script>
+    var phone = new Phone();
+    phone.init();
+</script>
+
+</html>
