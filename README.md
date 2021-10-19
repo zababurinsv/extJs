@@ -26,10 +26,11 @@
   ```
 * При сбрасывании параметров из тега select исчезало дефолтное поле
 
- ```jsx
+  ```jsx
   <option value="0">--Please choose an option--</option>
   ```
 * По умолчанию кнопка selected должна быть отключена
+
   ```jsx
   <button id="btn-select" type="button" disabled="true">Select</button>
   ```
