@@ -21,15 +21,15 @@
 2. 
 * `for="pet-select"` требуется заменить на `for="phone-select"`
   ```jsx
-   <label for="pet-select">Choose:</label>
+  <label for="pet-select">Choose:</label>
   ```
 * При сбразывании параметров из тега select изчезало дефолтное поле
   ```jsx
-      <option value="0">--Please choose an option--</option>
+  <option value="0">--Please choose an option--</option>
   ```
 * По умолчанию кнопка selected должна быть отклбюченна  
   ```jsx
-      <button id="btn-select" type="button" disabled="true">Select</button>
+  <button id="btn-select" type="button" disabled="true">Select</button>
   ```
 * При нажатии кнопки select не производилось обновление данных.
 
